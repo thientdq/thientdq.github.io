@@ -1,0 +1,344 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif !important;
+   
+}
+/* header */
+#header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/brick-brickwall-brickwork-cement-276514.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.user-box{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.user-box img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+    border: 2px solid #e4e3dc;
+}
+.user-box h1{
+    color: #fff;
+    font-weight: bold;
+    margin: 10px;
+}
+.user-box p{
+    color: #fff;
+}
+.scroll-btn{
+    bottom: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #fff;
+    padding: 10px 10px 20px;
+    border-radius: 30px;
+}
+.scroll-bar span{
+    border: 2px solid #fff;
+    font-size: 10px;
+    border-radius: 30px;
+}
+.scroll-bar{
+    animation: mover 1s infinite alternate;
+}
+@keyframes mover{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+/*------About--------------------*/
+.about{
+    padding-top: 100px;
+    /* padding-bottom: 50px; */
+    margin-bottom: -134px;
+    padding-bottom: 50px;
+    /* background-color: red; */
+}
+.about h3{
+    
+    font-weight: 500 !important;
+}
+.about p{
+    font-size: 20px;
+}
+.profile-img{
+    width: 90%;
+    height: 500px;
+    /* height: 80%; */
+    margin-bottom: 30px;
+}
+.col-md-6.content{
+    /* background-color: red; */
+    padding: 30px !important;
+}
+p.skills{
+    /* background: rebeccapurple; */
+    margin-left: 10px;
+}
+.nav-bar{
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+.navbar{
+    background-color: #000 !important;
+}
+.navbar-brand img{
+    width: 30%;
+}
+.nav-bar .fa-bars{
+    font-size: 35px;
+    color: #fff;
+}
+.navbar-toggler{
+    outline: none !important;
+    
+}
+.navbar-nav{
+    /* float: right;
+    text-align: right; */
+    text-align: center;
+}
+.nav-link{
+    color: #fff !important;
+}
+.skills-bar p{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.progress{
+    border-radius: 16px !important;
+    margin-bottom: 10px;
+}
+.progress-bar{
+    border-radius: 16px;
+    background: rgb(172, 169, 169) !important;
+}
+/*----------RESUME----------------*/
+.resume{
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background: #f9f9f9;
+	
+}
+.resume h3{
+    margin-bottom: 50px;
+}
+.timeline{
+    list-style-type: none;
+    position: relative;
+}
+.timeline:before{
+    content: '';
+    background: #555;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    width: 2px;
+    height: 100%;
+    z-index: 1;
+}
+.timeline li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background: #fff;
+}
+.timeline li h4{
+    background-color: #000;
+    padding: 5px 0 5px 20px;
+    color: #fff;
+    font-size: 15px;
+}
+.timeline li h4 span{
+    font-weight: bold;
+    color: #ccc;
+}
+.timeline li:before{
+    content: '';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #000;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+/*-----------SERVICES----------------*/
+.services{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* height: 100vh; */
+    /* background-color: red; */
+}
+.services h1{
+    margin-bottom: 10px;
+}
+.services-box{
+    background: #f9f9f9;
+    padding: 10px;
+    margin-top: 20px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    flex:1;
+    /* background-color: blue; */
+    /* align-items: center;
+    justify-content: center; */
+    
+}
+
+.services-box .picture-box img{
+    width: 25%;
+    align-items: center;
+}
+.services-box i{
+    text-align: center;
+
+}
+.services-box .btn{
+    /* margin-left: 30%; */
+    padding: 2px 20px !important;
+}
+.services-box .fa{
+    margin: 0 10px;
+    font-size: 20px;
+}
+.services-box span{
+    margin: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.services-box .fa{
+    color: rgb(136, 115, 13);
+}
+.services-box p{
+    font-size: 15px;
+    margin-top: 20px;
+    color: #777;
+    text-align: center;
+}
+.services-box:hover{
+    background: #000;
+    color: #fff;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 1s;
+
+}
+.services-box:hover p{
+    color: #fff;
+}
+.container{
+    margin-left: 50px;
+}
+.row{
+    display: flex;
+   
+}
+
+/*----------CONTACT-----------------*/
+.contact{
+    padding-top: 50px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/brick-brickwall-brickwork-cement-276514.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}.contact .row{
+    padding: 30px 0;
+    font-size: 22px;
+}
+.contact .col-md-4 .fa{
+    padding: 10px;
+    font-size: 40px;
+}
+.contact .btn{
+    padding: 10px 25px 10px 25px;
+    margin: 5px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    background: transparent;
+}
+.contact .btn:focus{
+    box-shadow: none !important;
+}
+.contact .btn:hover{
+    border: 2px solid #000 !important;
+    background: #000 !important;
+    transition: 0.6s;
+}
+.contact .btn .fa{
+    margin-right: 10px;
+}
+.footer{
+    background: #000;
+    height: 50px;
+    margin-top: 50px;
+    color: #fff;
+    padding-top: 10px;
+}
+.footer .fa{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: yellow;
+}
+.social-icon{
+    top: 50%;
+    transform: translateY(-50%);
+    position: sticky;
+    z-index: 1;
+    width: 80px;
+    z-index: 2;
+
+}
+.social-icon ul{
+    padding: initial;
+}
+.social-icon ul li{
+    height: 25px;
+    width: 25px;
+    list-style-type: none;
+    padding-left: 5px;
+    padding-top: 2px;
+    margin-top: 5px;
+    color: #fff !important;
+    background: #000 !important;
+    
+}
+.social-icon .fa{
+    color: #fff;
+}
+.social-icon ul li:hover{
+    padding-left: 30px;
+    width: 80px;
+    transition: 1s;
+}
+/* @media(max-width: 991px){
+    .navbar-collapse ul li a{
+        align-items: center !important;
+        text-align: center !important;
+    }
+} */
